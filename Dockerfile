@@ -5,4 +5,3 @@ VOLUME ["/config", "/app"]
 COPY entrypoint.sh /entrypoint
 RUN chmod +rx /entrypoint
 ENTRYPOINT ["./entrypoint"]
-CMD ["sh", "-c", "./$LOCALAPPIMG"]
