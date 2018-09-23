@@ -4,5 +4,5 @@ ENV LOCALAPPIMG=local.AppImage UMASK=0000
 COPY entrypoint.sh /entrypoint
 RUN chmod +rx /entrypoint
 ENTRYPOINT ["./entrypoint"]
-CMD ["./$LOCALAPPIMG"]
+CMD ["sh", "-c", "./$LOCALAPPIMG"]
 VOLUME ["/local.AppImage"]
