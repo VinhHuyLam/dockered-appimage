@@ -5,4 +5,4 @@ RUN apk add --update --no-cache
 COPY entrypoint.sh /entrypoint
 RUN chmod +rx /entrypoint
 CMD ["/entrypoint"]
-VOLUME ["/local.AppImage]
+VOLUME [/local.AppImage]
