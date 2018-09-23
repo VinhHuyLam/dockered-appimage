@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:latest
 EXPOSE 1730
 ENV LOCALAPPIMG=local.AppImage UMASK=0000
 VOLUME ["/config", "/app"]
